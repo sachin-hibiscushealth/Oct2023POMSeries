@@ -122,6 +122,9 @@ public class ElementUtil {
 		action.moveToElement(getElement(locator)).build().perform();
 	}
 
+	/**
+	 * This method is used to clear the field
+	 */
 	public void doClear(By locator) {
 		getElement(locator).clear();
 	}
