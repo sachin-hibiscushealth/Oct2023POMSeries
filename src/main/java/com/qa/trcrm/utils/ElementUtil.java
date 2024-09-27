@@ -126,6 +126,9 @@ public class ElementUtil {
 		getElement(locator).clear();
 	}
 
+	/**
+	 * This method is used to quit the browsers
+	 */
 	public void doQuit() {
 		driver.quit();
 	}
