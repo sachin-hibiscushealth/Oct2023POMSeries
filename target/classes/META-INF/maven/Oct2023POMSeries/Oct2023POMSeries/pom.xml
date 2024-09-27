@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.8.0</version>
+			<version>6.14.3</version>
 		</dependency>
 		<dependency>
 			<groupId>com.lowagie</groupId>
@@ -52,6 +52,53 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.24</version>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>1.0-beta</version>
+		</dependency>
+		<!-- Jira Integration with Selenium || Raise a bug for failure test cases 
+			|| No Manual Bug in JIRA -->
+		<dependency>
+			<groupId>net.rcarz</groupId>
+			<artifactId>jira-client</artifactId>
+			<version>0.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.19.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.19.0</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -111,6 +158,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.20</version>
 					<configuration>
+					
 						<suiteXmlFiles>
 							<!--							 <suiteXmlFile>src/main/resources/runners/maven_testng.xml</suiteXmlFile> -->
 							<!--							 <suiteXmlFile>src/main/resources/runners/testng.xml</suiteXmlFile> -->
